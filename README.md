@@ -8,10 +8,20 @@ local PrexVen = loadstring(game:Httpget("https://raw.githubusercontent.com/PrexV
 
 # Load The Window
 ```lua
-local mainUI = PrexVen:CreateWindow({
-    Name = "My UI",
-    LoadingTitle = "Welcome",
-    LoadingSubTitle = "Initializing...",
+local window = PrexVen:CreateWindow({
+    Name = "PrexVen",
+    LoadingTitle = "Welcome to PrexVen",
+    LoadingSubTitle = "by HacksCreator102 in GitHub",
+    
+    Discord = { 
+        Enabled = false, 
+        InviteCode = "your-discord-code" 
+    },
+    
+    Key = { 
+        Enabled = false, 
+        List = { "12345", "67890", "PREXVEN" } -- Example valid keys
+    }
 })
 ```
 
@@ -40,7 +50,7 @@ Tab:CreateButton({
 
 # Create a Slider
 ```lua
-homeTab:CreateSlider({
+Tab:CreateSlider({
     Name = "Volume",
     Min = 0,
     Max = 100,
