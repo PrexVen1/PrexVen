@@ -3,6 +3,7 @@ PrexVen is a Roblox UI Library that makes u use it better than any
 
 # Load the Library
 ```lua
+local HttpService = game:GetService("HttpService") 
 local PrexVen = loadstring(game:Httpget("https://raw.githubusercontent.com/PrexVen1/PrexVen/refs/heads/main/source.lua"))()
 ```
 
